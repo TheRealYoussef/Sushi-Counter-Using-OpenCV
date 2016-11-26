@@ -15,7 +15,7 @@ public:
     ~MainWindow();
 
 private slots:
-    void on_imageNumber_activated(const QString &arg1);
+    void on_imageNumber_activated(const QString &currentImage);
 
 private:
     Ui::MainWindow *ui;
