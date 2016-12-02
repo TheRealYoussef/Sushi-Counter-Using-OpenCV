@@ -1,0 +1,7 @@
+Algorithm:
+
+1- Each image has its seperate template and threshold.
+2- Apply template matching.
+3- Use a sliding window to get the local Maximums.
+4- The local maximums with value larger than threshold are detected as sushi pieces
+5- Remove unnecessary detections by removing pieces that are too close to each other.
