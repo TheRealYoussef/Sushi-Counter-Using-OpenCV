@@ -2,14 +2,14 @@
 #include "ui_mainwindow.h"
 #include "templatematching.h"
 
-float thresholds[] = {0.7, 0.68, 0.59, 0.63, 0.65};
+float thresholds[] = {0.7, 0.68, 0.59, 0.63, 0.65, 0.545};
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow) {
     ui->setupUi(this);
 
-    for (int i = 1; i <= 5; ++i)
+    for (int i = 1; i <= 6; ++i)
         ui->imageNumber->addItem(QString::number(i));
 
     ui->image->setScaledContents(true);
